@@ -1,0 +1,21 @@
+<!-- 地图信息 -->
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"/>
+<view class="classname">{{address}}</view>
+
+<!-- 联系方式 -->
+<view class="bg-connection">
+    <button>邮箱：zbn0601@qq.com</button>
+    <button bindtap="callPhone">手机：{{phoneNumber}}</button>
+    <button bindtap="callNumber">电话：{{tellNumber}}</button>
+    <button >微信：zhang474791956</button>
+</view>
+
+<view class="title">服务预订</view>
+<form action="">
+    <input placeholder="姓名" required/>  
+    <input  placeholder="行业" required/> 
+    <input type="Number" placeholder="联系方式" required/> 
+    <input placeholder="您的需求" required/> 
+    <button type="primary">提交按钮</button>
+</form>
+

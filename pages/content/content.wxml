@@ -1,0 +1,14 @@
+<!--content.wxml-->
+
+
+<view class="classname">{{id}}</view>
+ <view class="classname" wx:for="{{data}}" wx:key="item">
+  <view class="classname" wx:if="{id=={item.id?true:false}}">
+      <view class="classname">{{item.title}}</view>
+      <view class="classname">{{item.content}}</view>
+  
+  </view>
+
+
+</view> 
+

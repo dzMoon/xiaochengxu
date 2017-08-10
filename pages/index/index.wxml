@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<swiper indicator-dots
+  autoplay interval="{{interval}}" duration="{{duration}}" circular>
+    <block wx:for="{{urls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+</swiper>
+
+<view class="navBar">
+  <view class="nav-item">
+      <image src="/source/company.png"></image>
+      公司简介
+  </view>
+  <view class="nav-item">
+      <image src="/source/website.png"></image>
+      网站建设
+  </view>
+  <view class="nav-item">
+    <image src="/source/service.png"></image>
+    服务预订
+  </view>
+</view>
+
+
+<view class="classname" wx:for="{{info}}">
+    <navigator url="../content/content?id={{item.id}}&&url='../index/index.js'">{{item.title}}</navigator>
+    
+    <view class="classname">{{item.date}}</view>
+</view>

@@ -1,0 +1,13 @@
+<view class="classname">
+
+
+</view>
+
+
+
+<view class="bg-connection">
+    <button>邮箱：zbn0601@qq.com</button>
+    <button bindtap="callPhone">手机：{{phoneNumber}}</button>
+    <button bindtap="callNumber">电话：{{tellNumber}}</button>
+    <button >微信：zhang474791956</button>
+</view>

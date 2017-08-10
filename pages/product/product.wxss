@@ -1,0 +1,21 @@
+/* product.wxss */
+.bg-connection{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button{
+  width: 65%;
+  height: 2rem;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+}
+button:nth-of-type(1){background: transparent;color: #000;border-color:transparent;outline-color:transparent;}
+button:nth-of-type(2){background: greenyellow;}
+button:nth-of-type(3){background: orange;}
+button:nth-of-type(4){background: skyblue;}
